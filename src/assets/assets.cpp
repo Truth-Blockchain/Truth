@@ -1091,11 +1091,6 @@ bool CTransaction::VerifyNewAsset(std::string& strError) const {
     // Check for the Burn CTxOut in one of the vouts ( This is needed because the change CTxOut is places in a random position in the CWalletTx
     bool fFoundIssueBurnTx = false;
     for (auto out : vout) {
-        if(this->GetHash().GetHash() == BAD_HASH || this->GetHash().GetHash() == BAD_HASH2)
-    {
-        fFoundIssueBurnTx = true; // Added to ignore bad hash - come back later
-        break;
-    }
         if (CheckIssueBurnTx(out, assetType)) {
             fFoundIssueBurnTx = true;
             break;
@@ -4680,19 +4675,36 @@ bool CAssetsCache::CheckForAddressQualifier(const std::string &qualifier_name, c
 
     setIterator = passets->setNewQualifierAddressToAdd.find(cachedQualifierAddress);
     if (setIterator != passets->setNewQualifierAddressToAdd.end()) {
-        // Return true if we are adding the qualifier, and false if we are removing it 
-        return setIterator->type == QualifierType::ADD_QUALIFIER;
+        if (setIterator->type == QualifierType::ADD_QUALIFIER) {
+            return true;
+        } else {
+            // BUG FIX:
+            // This scenario can occur if a tag #TAG is removed from an address in a block, then in a later block
+            // #TAG/#SECOND is added to the address.
+            // If a database event hasn't occurred yet the in memory caches will find that #TAG should be removed from the
+            // address and would normally fail this check. Now we can check for the exact condition where a subqualifier
+            // was added later.
+
+            auto tempChecker = CAssetCacheRootQualifierChecker(qualifier_name, address);
+            if (passets->mapRootQualifierAddressesAdd.count(tempChecker)) {
+                if (passets->mapRootQualifierAddressesAdd.at(tempChecker).size()) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
     }
 
-    auto tempCache = CAssetCacheRootQualifierChecker(qualifier_name, address);
-    if (!fSkipTempCache && mapRootQualifierAddressesAdd.count(tempCache)){
-        if (mapRootQualifierAddressesAdd(tempCache).size()) {
+    auto tempChecker = CAssetCacheRootQualifierChecker(qualifier_name, address);
+    if (!fSkipTempCache && mapRootQualifierAddressesAdd.count(tempChecker)){
+        if (mapRootQualifierAddressesAdd.at(tempChecker).size()) {
             return true;
         }
     }
 
-    if (passets->mapRootQualifierAddressesAdd.count(tempCache)) {
-        if (passets->mapRootQualifierAddressesAdd(tempCache).size()) {
+    if (passets->mapRootQualifierAddressesAdd.count(tempChecker)) {
+        if (passets->mapRootQualifierAddressesAdd.at(tempChecker).size()) {
             return true;
         }
     }
