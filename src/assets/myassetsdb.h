@@ -1,9 +1,10 @@
 // Copyright (c) 2019 The Raven Core developers
+// Copyright (c) 2020-2024 The Truth Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVENCOIN_MYASSETSDB_H
-#define RAVENCOIN_MYASSETSDB_H
+#ifndef TRUTHCOIN_MYASSETSDB_H
+#define TRUTHCOIN_MYASSETSDB_H
 
 #include <dbwrapper.h>
 
@@ -79,4 +80,4 @@ public:
 };
 
 
-#endif //RAVENCOIN_MYASSETSDB_H
+#endif //TRUTHCOIN_MYASSETSDB_H
