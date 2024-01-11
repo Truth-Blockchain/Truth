@@ -1,10 +1,11 @@
 // Copyright (c) 2014-2016 The Bitcoin Core developers
 // Copyright (c) 2017-2019 The Raven Core developers
+// Copyright (c) 2020-2024 The Truth Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RAVEN_CRYPTO_RIPEMD160_H
-#define RAVEN_CRYPTO_RIPEMD160_H
+#ifndef TRUTH_CRYPTO_RIPEMD160_H
+#define TRUTH_CRYPTO_RIPEMD160_H
 
 #include <stdint.h>
 #include <stdlib.h>
@@ -26,4 +27,4 @@ public:
     CRIPEMD160& Reset();
 };
 
-#endif // RAVEN_CRYPTO_RIPEMD160_H
+#endif // TRUTH_CRYPTO_RIPEMD160_H
