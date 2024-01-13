@@ -281,7 +281,7 @@
     </message>
     </context>
 <context>
-    <name>RavenGUI</name>
+    <name>TruthGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;Зурвас хавсаргах...</translation>
@@ -347,7 +347,7 @@
         <translation>Оношилгоо ба засварын консолыг онгойлго</translation>
     </message>
     <message>
-        <source>Raven</source>
+        <source>Truth</source>
         <translation>Биткойн</translation>
     </message>
     <message>
@@ -579,7 +579,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>truth-core</name>
     <message>
         <source>Options:</source>
         <translation>Сонголтууд:</translation>
