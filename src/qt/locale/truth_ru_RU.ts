@@ -339,8 +339,8 @@
         <translation>Пробросить порт через &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Raven network through a SOCKS5 proxy.</source>
-        <translation>Подключится к сети Raven через SOCKS5 прокси.</translation>
+        <source>Connect to the Truth network through a SOCKS5 proxy.</source>
+        <translation>Подключится к сети Truth через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -411,8 +411,8 @@
 <context>
     <name>QObject</name>
     <message>
-        <source>Enter a Raven address (e.g. %1)</source>
-        <translation>Введите Raven-адрес (напр. %1)</translation>
+        <source>Enter a Truth address (e.g. %1)</source>
+        <translation>Введите Truth-адрес (напр. %1)</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -509,7 +509,7 @@
     </message>
 </context>
 <context>
-    <name>RavenGUI</name>
+    <name>TruthGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Подписать &amp;сообщение...</translation>
@@ -583,8 +583,8 @@
         <translation>&amp;Проверить сообщение...</translation>
     </message>
     <message>
-        <source>Raven</source>
-        <translation>Raven Core</translation>
+        <source>Truth</source>
+        <translation>Truth Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -823,14 +823,14 @@
     </message>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>truth-core</name>
     <message>
-        <source>Raven Core</source>
-        <translation>Raven Core</translation>
+        <source>Truth Core</source>
+        <translation>Truth Core</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>raven-core</translation>
+        <translation>truth-core</translation>
     </message>
     <message>
         <source>Information</source>
