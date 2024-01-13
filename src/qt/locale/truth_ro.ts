@@ -62,12 +62,12 @@
         <translation>Primește Adrese</translation>
     </message>
     <message>
-        <source>These are your Raven addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Acestea sunt adresele Raven pentru efectuarea plăților . Intotdeauna verifică cantitatea si adresa de primire inainte de a efectua tranzactia</translation>
+        <source>These are your Truth addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Acestea sunt adresele Truth pentru efectuarea plăților . Intotdeauna verifică cantitatea si adresa de primire inainte de a efectua tranzactia</translation>
     </message>
     <message>
-        <source>These are your Raven addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Acestea sunt adresele Raven pentru a primi plățile.Este recomandat să folosești o noua adresă pentru fiecare tranzacție</translation>
+        <source>These are your Truth addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Acestea sunt adresele Truth pentru a primi plățile.Este recomandat să folosești o noua adresă pentru fiecare tranzacție</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -164,7 +164,7 @@
         <translation>Confirmă criptarea portofelului</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR RAVENS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TRUTHS&lt;/b&gt;!</source>
         <translation>Atenţie: dacă criptezi portofelul şi pierzi parola, &lt;b&gt;VEI PIERDE TOATE MONEDELE&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -593,7 +593,7 @@
     </message>
 </context>
 <context>
-    <name>RavenGUI</name>
+    <name>TruthGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Semnează &amp;mesajul...</translation>
@@ -659,8 +659,8 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Raven address</source>
-        <translation>Trimite monedele către o adresă Raven</translation>
+        <source>Send coins to a Truth address</source>
+        <translation>Trimite monedele către o adresă Truth</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -679,8 +679,8 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <source>Raven</source>
-        <translation>Raven</translation>
+        <source>Truth</source>
+        <translation>Truth</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -707,12 +707,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-        <source>Sign messages with your Raven addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de Raven pentru a face dovada că îți aparțin.</translation>
+        <source>Sign messages with your Truth addresses to prove you own them</source>
+        <translation>Semnează mesajele cu adresa ta de Truth pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Raven addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Raven specificată.</translation>
+        <source>Verify messages to ensure they were signed with specified Truth addresses</source>
+        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Truth specificată.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -723,12 +723,12 @@
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and raven: URIs)</source>
-        <translation>Cerere plată (generează coduri QR și raven: URIs)</translation>
+        <source>Request payments (generates QR codes and truth: URIs)</source>
+        <translation>Cerere plată (generează coduri QR și truth: URIs)</translation>
     </message>
     <message>
-        <source>Open a raven: URI or payment request</source>
-        <translation>Deschide un raven: URI sau cerere de plată</translation>
+        <source>Open a truth: URI or payment request</source>
+        <translation>Deschide un truth: URI sau cerere de plată</translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -899,10 +899,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>truth-core</name>
     <message>
-        <source>Raven Core</source>
-        <translation>Raven Core</translation>
+        <source>Truth Core</source>
+        <translation>Truth Core</translation>
     </message>
     <message>
         <source>Information</source>
