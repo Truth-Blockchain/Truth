@@ -189,7 +189,7 @@
     </message>
     </context>
 <context>
-    <name>RavenGUI</name>
+    <name>TruthGUI</name>
     <message>
         <source>&amp;Transactions</source>
         <translation>&amp;Транзакциялар</translation>
@@ -211,7 +211,7 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>Raven</source>
+        <source>Truth</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -343,7 +343,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>raven-core</name>
+    <name>truth-core</name>
     <message>
         <source>Information</source>
         <translation>Информация</translation>
